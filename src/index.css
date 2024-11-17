@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#education-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.educations{
+  display: flex;
+  flex-direction: column;
+}
+
+.education-details{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.education-details div{
+  display: flex;
+  gap: 1rem;
+}
+
+.education-details div p{
+  display: flex;
+  align-items: center;
+  
+}
+.education-details div h3{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
