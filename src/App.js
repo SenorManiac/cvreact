@@ -71,9 +71,6 @@ function App() {
     setWorkHistory(newWorkHistory);
   };
 
-  const toggleResumeBuilder = () => {
-    setIsResumeBuilderVisible(!isResumeBuilderVisible);
-  };
 
   return (
     <div id='resume-complete'>
