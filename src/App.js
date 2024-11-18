@@ -44,11 +44,6 @@ function App() {
     endDate: ''
   });
 
-  const [newEducation, setNewEducation] = useState({
-    school: '',
-    degree: '',
-    graduationYear: ''
-  });
 
   const [editIndex, setEditIndex] = useState(null); // Track the index of the work entry being edited
 

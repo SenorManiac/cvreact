@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function WorkHistory({ workHistory, setWorkHistory, newWork, setNewWork, editIndex, setEditIndex, onEdit, onRemove }) {
   const handleChange = (e) => {
