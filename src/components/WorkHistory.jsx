@@ -11,11 +11,13 @@ function WorkHistory({ workHistory, setWorkHistory, newWork, setNewWork, editInd
 
   const handleAddWork = () => {
     if (editIndex !== null) {
+      // Update existing work entry
       const updatedWorkHistory = [...workHistory];
       updatedWorkHistory[editIndex] = newWork;
       setWorkHistory(updatedWorkHistory);
-      setEditIndex(null); 
+      setEditIndex(null); // Reset edit index
     } else {
+      // Add new work entry
       setWorkHistory([...workHistory, newWork]);
     }
     setNewWork({ company: '', position: '', tasks: '', startDate: '', endDate: '' });
@@ -24,7 +26,7 @@ function WorkHistory({ workHistory, setWorkHistory, newWork, setNewWork, editInd
   const handleEdit = (index) => {
     const workToEdit = workHistory[index];
     setNewWork(workToEdit);
-    setEditIndex(index); 
+    setEditIndex(index); // Set the edit index
   };
 
   return (

@@ -129,13 +129,9 @@ function App() {
           />
         </div>
         <div id='education'>
-          <Education 
+        <Education 
             education={education} 
             setEducation={setEducation} 
-            newEducation={newEducation}
-            setNewEducation={setNewEducation}
-            editIndex={editIndex}
-            setEditIndex={setEditIndex}
             onEdit={handleEditEducation} 
             onRemove={handleRemoveEducation} 
           />

@@ -27,7 +27,7 @@ function DisplayResume({ generalInformation, education, workHistory }) {
                             <p>Position: {work.position}</p>
                             <p>Start Date: {work.startDate}</p>
                             <p>End Date: {work.endDate}</p>
-                            <p className='jobduties' style={{ whiteSpace: 'pre-wrap' }}>{work.tasks}</p>
+                            <p className='jobduties' style={{ whiteSpace: 'pre-wrap' }}>Job Duties: {work.tasks}</p>
                         </div>
                         </li>
                     ))}
