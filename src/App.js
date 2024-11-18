@@ -46,7 +46,7 @@ function App() {
 
 
   const [editIndex, setEditIndex] = useState(null); 
-  const [isResumeBuilderVisible, setIsResumeBuilderVisible] = useState(true); 
+
 
 
   const handleEditEducation = (index, updatedEducation) => {
@@ -74,7 +74,7 @@ function App() {
 
   return (
     <div id='resume-complete'>
-         <div id='resume-builder' className={isResumeBuilderVisible ? '' : 'hidden'}>
+         <div id='resume-builder'>
         <h1>Resume Builder</h1>
         <button onClick={() => {
           setGeneralInformation({
