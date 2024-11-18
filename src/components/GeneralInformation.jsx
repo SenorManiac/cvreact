@@ -1,7 +1,7 @@
 import React from 'react';
 
 function GeneralInformation({ generalInformation, setGeneralInformation }) {
-    console.log('Received props in GeneralInformation:', generalInformation);
+
     
     const handleChange = (e) => {
         const { name, value } = e.target;

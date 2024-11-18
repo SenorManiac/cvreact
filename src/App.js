@@ -45,7 +45,9 @@ function App() {
   });
 
 
-  const [editIndex, setEditIndex] = useState(null); // Track the index of the work entry being edited
+  const [editIndex, setEditIndex] = useState(null); 
+  const [isResumeBuilderVisible, setIsResumeBuilderVisible] = useState(true); 
+
 
   const handleEditEducation = (index, updatedEducation) => {
     const newEducation = [...education];
@@ -69,9 +71,13 @@ function App() {
     setWorkHistory(newWorkHistory);
   };
 
+  const toggleResumeBuilder = () => {
+    setIsResumeBuilderVisible(!isResumeBuilderVisible);
+  };
+
   return (
     <div id='resume-complete'>
-      <div id='resume-builder'>
+         <div id='resume-builder' className={isResumeBuilderVisible ? '' : 'hidden'}>
         <h1>Resume Builder</h1>
         <button onClick={() => {
           setGeneralInformation({
@@ -143,6 +149,9 @@ function App() {
             onRemove={handleRemoveWorkHistory} 
           />
         </div>
+        <div id='resume-buttons'>
+          <button onClick={() => document.getElementById('resume-builder').style.display = 'none'}>Preview Resume</button>
+         </div> 
       </div>
       <div id='resume-preview'>
         <DisplayResume 
